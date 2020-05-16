@@ -15,7 +15,7 @@ namespace NorthwindConsoleEF3
         {
 
             //var connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-            var connectionString = "Server=(localdb)\\MSSQLLocalDB; Catalog=Northwind;TrustServerCertificate=true;MultiSubnetFailover=true;";
+            var connectionString = "Server=(localdb)\\MSSQLLocalDB; Database=NorthwindEF3;TrustServerCertificate=true;MultiSubnetFailover=true;";
 
             optionsBuilder.UseSqlServer(connectionString);
             

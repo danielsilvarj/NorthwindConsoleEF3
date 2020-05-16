@@ -10,12 +10,11 @@ namespace NorthwindConsoleEF3.Modelos
     {
         public int CategoriaId { get; set; }
         
-        [Column(TypeName ="VARCHAR")]
-        [StringLength(255)]
+        [Column(TypeName ="VARCHAR(255)")]
+        
         public string Nome { get; set; }
         
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(255)]
+        [Column(TypeName = "VARCHAR(255)")]
         public string Descricao { get; set; }
 
         public virtual ICollection<Produto> Produtos { get; set; }
